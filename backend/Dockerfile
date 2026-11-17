@@ -26,6 +26,6 @@ WORKDIR /app
 # Copy generated JAR file
 COPY --from=build /app/target/*.jar app.jar
 
-EXPOSE 8081
+EXPOSE 32500
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
